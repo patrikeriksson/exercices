@@ -10,7 +10,7 @@
   <title>Components</title>
 </head>
 <body>
-  <header class="main-header">
+  <header>
     <nav class="breadcrumb">
       <ul class="breadcrumb__list">
         <li class="breadcrumb__item">PLANERING</li>
@@ -22,23 +22,28 @@
   </header>
 
   <main>
-    <section>
-      <aside>
-        <h2>1.0</h2>
-        <h3>2 studiedagar</h3>
+    <section class="lesson">
+      <aside class="lesson__aside">
+        <h2 class="lesson__heading lesson__heading--border-bottom">01</h2>
+        <h3 class="lesson__heading lesson__heading--small">2 studiedagar</h3>
       </aside>
 
-      <article>
-        <h2>Mål med modul</h2>
-        <div>
-          <div>1</div>
-          <p>Paradigm shift series A financing social media startup backing android.</p>
+      <article class="lesson__content">
+        <h2 class="lesson__heading">Mål med modul</h2>
+        <div class="lesson__outcome">
+          <div class="lesson__outcome__number">1</div>
+          <p class="lesson__outcome__text">Paradigm shift series A financing social media startup backing android.</p>
         </div>
-        <div>
-          <div>2</div>
-          <p>Paradigm shift series A financing social media startup backing android.</p>
+        <div class="lesson__outcome">
+          <div class="lesson__outcome__number">2</div>
+          <p class="lesson__outcome__text">Paradigm shift series A financing social media startup backing android.</p>
         </div>
       </article>
+    </section>
+
+    <section  class="link">
+      <img class="link__icon" src="images/videocam.svg" alt="">
+      <p class="link__text">Super awesome video</p>
     </section>
   </main>
 
