@@ -46,7 +46,6 @@ p {
   font-family: 'Fira Sans', sans-serif;
   color: white;
   font-size: 16px;
-  margin: 20px 0;
 }
 
 li, address {
@@ -56,6 +55,36 @@ li, address {
   font-size: 16px;
 }
 
+.header {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
+  padding: 1rem;
+  padding-bottom: 0;
+  background-color: #3DE07E;
+  max-height: 600px;
+}
+
+.navIcon {
+  grid-column: 1 / -1;
+}
+
+.headline {
+  grid-column: 1 / -1;
+  margin-top: auto;
+  font-size: 6.25rem;
+  text-align: center;
+}
+
+.ninjaHead {
+  margin-top: auto;
+  grid-column: 6 / 8;
+  align-self: center;
+  max-width: 100%;
+}
+
+/*
 header {
   background-color: #3DE07E;
   width: 100%;
@@ -64,26 +93,46 @@ header {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-}
+} 
 
 .navIcon {
   width: 30px;
   align-self: flex-start;
   margin: 30px;
-}
+} 
 
 .ninjaHead {
   width: 250px;
-}
+} */
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  color: white;
   width: 75%;
   margin: 75px auto;
   gap: 20px;
   row-gap: 80px;
+}
+
+main > div {
+  min-width: 100%;
+}
+
+.checkoutMain {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 75%;
+  margin: 75px auto;
+  gap: 20px;
+  row-gap: 80px;
+}
+
+.white-heading {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-weight: 700;
+  font-size: 48px;
+  grid-column: 1 / span 2;
 }
 
 section {
@@ -98,26 +147,31 @@ section {
 
 footer {
   background-color: #333333;
-  display: flex;
-  justify-content: center;
   height: 300px;
-  align-items: center;
+  padding-top: 60px;
 }
 
-footer > div {
-  width: 25%;
+.footerContainer {
+  width: 75%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: auto;
 }
 
 .social {
   width: 30px;
 }
 
+.smallCard {
+  position: relative;
+}
+
 .smallCard > img {
   width: 100%;
 }
 
-.smallCard > p {
-  height: 120px;
+.smallCard p {
+  margin: 0 0 100px;
 }
 
 .largeCard > img {
@@ -126,16 +180,17 @@ footer > div {
 
 .largeCard {
   background-color: white;
+  position: relative;
 }
 
-.largeCard > h2 {
+.largeCard h2 {
   color: black;
-  margin: 15px;
+  margin: 15px 15px 100px;
 }
 
-.largeCard > p {
+.largeCard p {
   color: black;
-  margin: 15px;
+  margin: 0 15px 150px;
 }
 
 button {
@@ -144,6 +199,8 @@ button {
   border: 0;
   border-radius: 4px;
   font-size: 12px;
+  position: absolute;
+  bottom: 0;
 }
 
 .smallButton {

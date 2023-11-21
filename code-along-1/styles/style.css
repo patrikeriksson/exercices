@@ -1,26 +1,40 @@
+:root {
+  --headerBg: #FFFBF5;
+  --navBg: #F7EFE5;
+  --mainBg: #C3ACD0;
+  --asideBg: #7743DB;
+}
+
+.darkMode {
+  --headerBg: #0F0F0F;
+  --navBg: #232D3F;
+  --mainBg: #005B41;
+  --asideBg: #008170;
+}
+
 body {
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #66b0fc;
+  background-color: var(--headerBg);
   height: 100px;
 }
 
 nav {
-  background-color: #1fa911;
+  background-color: var(--navBg);
   width: 25%;
   height: 500px;
 }
 
 main {
-  background-color: #ca1c43;
+  background-color: var(--mainBg);
   width: 50%;
 }
 
 aside {
-  background-color: #ffb21c;
+  background-color: var(--asideBg);
   width: 25%;
 }
 
@@ -28,6 +42,26 @@ aside {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.darkButton {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 12px;
+}
+
+.darkButton::after {
+  content:"";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #000;
+  border-radius: 50%;
+  top: 2px;
+  left: 2px;
 }
 
 @media only screen and (max-width: 800px) {
