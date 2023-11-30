@@ -1,0 +1,63 @@
+body {
+  font-family: 'Fjalla One', sans-serif;
+}
+
+/* Remove number arrows Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Remove number arrows Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.bill-heading {
+  font-size: 1.75rem;
+  margin: 1rem auto;
+  width: fit-content;
+}
+
+.bill-splitter {
+  display: flex;
+  flex-direction: column;
+  /* gap: 1rem; */
+  margin: 0 auto;
+  width: 16rem;
+  border: 0.125rem solid #443385;
+  border-radius: 0.25rem;
+  padding: 2rem;
+  box-shadow: -0.5rem 0.5rem 0rem #e1e1fc;
+}
+
+.bill-splitter__label {
+  color: #5c29db;
+}
+
+.bill-splitter__input {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 1.25rem;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  margin-bottom: 2.5rem;
+}
+
+.bill-splitter__input:focus {
+  border-bottom: 1px solid #5c29db;
+}
+
+.bill-splitter__button {
+  border: none;
+  background-color: #443385;
+  color: white;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  box-shadow: -0.25rem 0.25rem 0rem #e1e1fc;
+  cursor: pointer;
+}

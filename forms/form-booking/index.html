@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Boka Tåg</title>
+  </head>
+  <body>
+    <section class="booking-card">
+      <header class="booking-card__header">
+        <div class="booking-card__title">
+          <h1 class="booking-card__heading">ÅKA TÅG</h1>
+        </div>
+        <div class="booking-card__destination">
+          <div class="booking-card__text-container">
+            <h2 class="booking-card__subheading">STOCKHOLM</h2>
+            <p class="booking-card__time">10.30</p>
+          </div>
+        </div>
+        <div class="booking-card__destination booking-card__destination--light">
+          <div class="booking-card__text-container">
+            <h2 class="booking-card__subheading">GÖTEBORG</h2>
+            <p class="booking-card__time">14.45</p>
+          </div>
+        </div>
+      </header>
+
+      <form class="booking-form">
+        <div class="booking-form__radio">
+          <div class="booking-form__radio-class">
+            <input
+              class="booking-form__radio-input"
+              type="radio"
+              id="klass2"
+              name="klass"
+              value="klass2"
+              checked
+            />
+            <label class="booking-form__radio-label" for="klass2"
+              >2:a klass</label
+            >
+          </div>
+          <div class="booking-form__radio-class">
+            <input
+              class="booking-form__radio-input"
+              type="radio"
+              id="klass1"
+              name="klass"
+              value="klass1"
+            />
+            <label class="booking-form__radio-label" for="klass1"
+              >1:a klass</label
+            >
+          </div>
+        </div>
+
+        <div class="booking-form__tickets">
+          <div class="booking-form__tickets-box">
+            <label class="booking-form__tickets-label" for="tickets"
+              >Antal biljetter</label
+            >
+            <select
+              class="booking-form__tickets-select"
+              id="tickets"
+              name="tickets"
+            >
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </div>
+          <div class="booking-form__tickets-box">
+            <label class="booking-form__tickets-label" for="title">Titel</label>
+            <select
+              class="booking-form__tickets-select"
+              id="title"
+              name="title"
+            >
+              <option value="ms">Ms.</option>
+              <option value="mr">Mr.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="miss">Miss</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="booking-form__name">
+          <div class="booking-form__name-box">
+            <label class="booking-form__name-label" for="first-name"
+              >Förnamn</label
+            >
+            <input
+              class="booking-form__name-input"
+              type="text"
+              name="first-name"
+              value="Greta"
+            />
+          </div>
+
+          <div class="booking-form__name-box">
+            <label class="booking-form__name-label" for="last-name"
+              >Efternamn</label
+            >
+            <input
+              class="booking-form__name-input"
+              type="text"
+              name="last-name"
+              value="Thunberg"
+            />
+          </div>
+        </div>
+
+        <div class="booking-form__checkbox">
+          <input
+            class="booking-form__checkbox-input"
+            type="checkbox"
+            id="terms"
+            name="terms"
+          />
+          <label class="booking-form__checkbox-label" for="terms"
+            >Godkänner villkoren</label
+          >
+        </div>
+        <input
+          class="booking-form__submit-input"
+          type="submit"
+          value="Boka biljetter"
+        />
+      </form>
+    </section>
+  </body>
+</html>

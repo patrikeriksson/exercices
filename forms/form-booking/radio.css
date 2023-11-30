@@ -1,0 +1,115 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper {
+  box-sizing: border-box;
+  width: min(90vw, 375px);
+  height: 375px;
+  background: radial-gradient(
+    ellipse at top,
+    hsl(213, 19%, 18%),
+   #171e28
+  );
+  border-radius: 24px;
+  padding: 30px;
+}
+.card {
+  height: 100%;
+  font-family: Overpass;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card__icon-container {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__icon {
+  width: 16px;
+}
+
+.card__button {
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 36px;
+  border-style: none;
+  padding: 12px;
+  color: hsl(0, 0%, 100%);
+
+  font-family: Overpass;
+  letter-spacing: 2px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.card__button:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.card__submitted {
+  display: none;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+
+.card__result {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    font-size: 14px;
+    border-radius: 15px;
+    padding: 8px 16px;
+    margin: 12px 0 4px;
+}
+.card__radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 16px 0;
+}
+.card__label {
+  width: 45px;
+  height: 45px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 50%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  color: hsl(217, 12%, 63%);
+}
+.card__label:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%)
+}
+.card__radio-button:checked+label {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.card__radio-button {
+  display: none;
+}
+.card__description {
+  color: hsl(217, 12%, 63%);
+  margin: 0 0 8px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+}
+.card__title {
+  margin: 16px 0 0;
+  padding: 0;
+  color: hsl(0,0%, 100%);
+}

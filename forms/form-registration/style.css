@@ -1,0 +1,70 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.registration-card {
+  width: 23.4375rem;
+  height: 49.875rem;
+  border-radius: 0.375rem;
+  background-color: #FFF;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.15);
+  margin: auto;
+}
+
+.registration-card__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.9375rem;
+  border-radius: 0.375rem 0.375rem 0rem 0rem;
+  background-color: #EDEDED; 
+}
+
+.registration-card__heading {
+  font-size: 1.625rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.80); 
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.registration-card__subheading {
+  font-size: 1.625rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 2rem 1rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.registration-card__form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1rem;
+}
+
+.registration-card__label {
+  font-size: 0.625rem; 
+  font-weight: 600;
+  color: #00000099;
+}
+
+.registration-card__input {
+  height: 2.875rem;
+  padding: 0 1rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
+  line-height: 1;
+  border: 1px solid rgba(0, 0, 0, 0.60);
+  border-radius: 0.1875rem;
+}
+
+.registration-card__button {
+  height: 4.5rem; 
+  border-radius: 0.1875rem;
+  border: 2px solid rgba(0, 0, 0, 0.60);
+  font-size: 1.125rem;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  background-color: #FFF;
+  margin-top: 4rem;
+  cursor: pointer;
+}

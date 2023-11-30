@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Split the nota</title>
+  </head>
+
+  <body>
+    <main>
+      <h1 class="bill-heading">Split the nota</h1>
+      <form class="bill-splitter">
+        <label class="bill-splitter__label" for="summa">Summa</label>
+        <input
+          class="bill-splitter__input"
+          type="number"
+          id="summa"
+          name="summa"
+          value="1000"
+        />
+        <label class="bill-splitter__label" for="friends">Antal vänner</label>
+        <input
+          class="bill-splitter__input"
+          type="number"
+          id="friends"
+          name="friends"
+          value="4"
+        />
+        <label class="bill-splitter__label" for="dricks">Dricks</label>
+        <input
+          class="bill-splitter__input"
+          type="number"
+          id="dricks"
+          name="dricks"
+          value="0.10"
+        />
+        <input class="bill-splitter__button" type="submit" value="Räkna" />
+      </form>
+    </main>
+  </body>
+</html>
